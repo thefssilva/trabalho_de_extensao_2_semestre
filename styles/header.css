@@ -1,0 +1,123 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1em 0 0 0.5em;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.lista-menu__item{
+    color: var(--verde-principal);
+}
+
+.container__botao:checked ~ .container__label > .cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+    .container__botao:checked ~ .container__label {
+        background: var(--verde-principal);
+    }
+    
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+    
+    .lista-menu__titulo, 
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+    
+    .lista-menu__titulo {
+        color: var(--preto);
+        font-weight: 700;
+    }
+    
+    .lista-menu__link {
+        background: var(--verde-principal);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .container__botao {
+        display: none;
+    }
+
+    .titulo__link {
+        text-align: center;
+        padding-top: 0.3em;
+    }
+
+    .lista__menu {
+        display: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .container {
+            display: none;
+        }
+
+        .titulo {
+            display: none;
+        }
+
+        .lista__menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .opcoes__item {
+            padding-left: 3em;
+        }
+
+        .opcoes__link:hover{
+            color: var(--verde-principal);
+        }
+        .opcoes__link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--preto);
+        }
+
+        .lista__menu-item {
+            justify-content: center;
+        }
+
+        .titulo__link {
+            padding-left: 2em;
+        }
+    }
+
+   

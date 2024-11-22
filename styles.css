@@ -1,0 +1,22 @@
+@import url("/styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/footer.css");
+@import url("./styles/pagina1.css");
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
+    --verde-principal: #3C662E;
+    --verde-secundario: #AAE8C7;
+    --preto: #000000;
+    --fonte-principal: 'Poppins';
+    --fonte-secundaria: 'Josefin Sans';
+    --cinza: #ecebeb;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
